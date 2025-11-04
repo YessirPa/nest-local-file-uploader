@@ -4,6 +4,15 @@
 
 ## Upload media on local hardware folder project 
 
+# Infos
+
+## Build : nest build or npm run build
+## Start dev : npm run start:dev 
+
+# Server running info
+App baseUrl: http://localhost:3500
+
+# Author 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
