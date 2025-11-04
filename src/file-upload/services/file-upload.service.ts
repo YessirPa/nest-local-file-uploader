@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { existsSync } from 'fs';
 import { MediaFile } from '../../entities/media-file.entity';
-import { Environment } from '../../environments/environment-dev';
+import { Environment } from '../../environments/environment';
 
 @Injectable()
 export class FileUploadService {
@@ -24,7 +24,9 @@ export class FileUploadService {
     const media = await this.mediaRepository.findOne({ where: { id } });
     if (media && existsSync(media.path)) {
       //return Environment.baseUrl + `/${media.path}`;
-      return Environment.baseUrl + Environment.mediaServeRoot + `/${media.filename}`;
+      return (
+        Environment.baseUrl + Environment.mediaServeRoot + `/${media.filename}`
+      );
     }
     throw new Error('File not found');
   }

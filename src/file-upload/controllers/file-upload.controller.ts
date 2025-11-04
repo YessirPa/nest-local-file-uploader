@@ -8,7 +8,7 @@ import {
 } from '@nestjs/common';
 import { FileUploadService } from '../services/file-upload.service';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { Environment } from '../../environments/environment-dev';
+import { Environment } from '../../environments/environment';
 
 @Controller('file')
 export class FileUploadController {
@@ -18,8 +18,13 @@ export class FileUploadController {
   @UseInterceptors(FileInterceptor('file'))
   async uploadFile(@UploadedFile() file: Express.Multer.File) {
     const media = await this.fileUploadService.uploadFile(file);
+    console.log(media);
     //return { id: media.id, link: Environment.baseUrl + `/file/${media.id}` };
-    return { id: media.id, link: Environment.baseUrl + Environment.mediaServeRoot + `/${file.filename}` };
+    return {
+      media: media,
+      link:
+        Environment.baseUrl + Environment.mediaServeRoot + `/${file.filename}`,
+    };
   }
 
   @Get(':id')
