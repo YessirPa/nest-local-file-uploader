@@ -35,9 +35,9 @@ App baseUrl: http://localhost:3500
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 - Author - [Epiphane SEMASSA](mailto:semassaepiphane@gmail.com)
-- Website - [https://epiphane-semassa.netlify.app/](https://epiphane-semassa.netlify.app/)
+- Website - [https://epiphane-semassa.netlify.app/](https://epiphane-semassa.netlify.app)
 - Twitter - [@Semassaepiphane](https://x.com/SemassaEpiphane)
-- Linkedin - [@EpiphaneSemassa](https://linkedin.com/in/epiphane-semassa-bb53011a1)
+- Linkedin - [@EpiphaneSemassa](https://linkedin.com/in/epiphane-semassa)
 
 ## License
 
