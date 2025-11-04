@@ -28,7 +28,8 @@ Path : src/environments/environment.ts
         };
 
 # Server running info
-App baseUrl: http://localhost:3500
+App base_url: http://localhost:3500
+Api docs link : base_url/api-docs
 
 # Author 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
