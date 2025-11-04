@@ -9,6 +9,14 @@
 ## Build : nest build or npm run build
 ## Start dev : npm run start:dev 
 
+# Database config
+      type: 'postgres',
+      host: 'localhost',
+      port: 5432,
+      username: 'postgres',
+      password: 'admin',
+      database: 'nest_file_upload_db'
+
 # Server running info
 App baseUrl: http://localhost:3500
 
