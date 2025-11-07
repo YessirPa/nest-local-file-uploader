@@ -4,7 +4,7 @@ export const Environment = {
   mediaServeRoot: '/uploads',
   mediaLocalFolderSaved: 'nest-local-uploads',
   databaseConfig: {
-    host: 'postgres',
+    host: 'localhost',
     port: 5432,
     username: 'postgres',
     password: 'admin',
